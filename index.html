@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Web Dev - Professional Web Development Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- Galaxy Background Canvas -->
+    <canvas id="galaxyCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Galaxy Web Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a></li>
+                <li><a href="services.html" class="nav-link" data-en="Services" data-fr="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="why-us.html" class="nav-link" data-en="Why Us" data-fr="Pourquoi Nous" data-ar="لماذا نحن">Why Us</a></li>
+                <li><a href="about.html" class="nav-link" data-en="About" data-fr="À Propos" data-ar="عننا">About</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-en="Build Your Digital Presence" data-fr="Construisez Votre Présence Numérique" data-ar="بناء حضورك الرقمي">Build Your Digital Presence</h1>
+            <p data-en="Professional web development solutions for your business" data-fr="Solutions de développement web professionnel pour votre entreprise" data-ar="حلول تطوير الويب المهنية لعملك">Professional web development solutions for your business</p>
+            <button class="btn btn-primary" data-en="Get Started" data-fr="Commencer" data-ar="ابدأ" onclick="window.location.href='contact.html'">Get Started</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 data-en="Services" data-fr="Services" data-ar="الخدمات">Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 data-en="Web Development" data-fr="Développement Web" data-ar="تطوير الويب">Web Development</h3>
+                <p data-en="Custom websites built with modern technologies. Responsive, fast, and optimized for all devices." data-fr="Sites web personnalisés construits avec les technologies modernes. Réactif, rapide et optimisé pour tous les appareils." data-ar="مواقع ويب مخصصة مبنية بتقنيات حديثة. سريعة وسريعة وقابلة للتحديث لجميع الأجهزة.">Custom websites built with modern technologies. Responsive, fast, and optimized for all devices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 data-en="UI/UX Design" data-fr="Conception UI/UX" data-ar="تصميم واجهة المستخدم">UI/UX Design</h3>
+                <p data-en="Beautiful, user-friendly interfaces that engage your audience and drive conversions." data-fr="Des interfaces belles et conviviales qui engagent votre audience et stimulent les conversions." data-ar="واجهات جميلة وسهلة الاستخدام تجذب جمهورك وتحفز التحويلات.">Beautiful, user-friendly interfaces that engage your audience and drive conversions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 data-en="Mobile Solutions" data-fr="Solutions Mobiles" data-ar="حلول الهاتف المحمول">Mobile Solutions</h3>
+                <p data-en="Responsive designs that work perfectly on smartphones, tablets, and desktops." data-fr="Des conceptions réactives qui fonctionnent parfaitement sur les smartphones, les tablettes et les ordinateurs de bureau." data-ar="تصاميم سريعة الاستجابة تعمل بشكل مثالي على الهواتف الذكية والأجهزة اللوحية وأجهزة سطح المكتب.">Responsive designs that work perfectly on smartphones, tablets, and desktops.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 data-en="Performance" data-fr="Performance" data-ar="الأداء">Performance</h3>
+                <p data-en="Lightning-fast load times and optimized code for the best user experience." data-fr="Des temps de chargement ultra-rapides et un code optimisé pour la meilleure expérience utilisateur." data-ar="أوقات تحميل فائقة السرعة وكود محسّن لأفضل تجربة مستخدم.">Lightning-fast load times and optimized code for the best user experience.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 data-en="Security" data-fr="Sécurité" data-ar="الأمان">Security</h3>
+                <p data-en="Secure, reliable web solutions with modern security best practices." data-fr="Solutions web sécurisées et fiables avec les meilleures pratiques de sécurité modernes." data-ar="حلول الويب الآمنة والموثوقة مع أفضل ممارسات الأمان الحديثة.">Secure, reliable web solutions with modern security best practices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 data-en="Support" data-fr="Support" data-ar="الدعم">Support</h3>
+                <p data-en="Ongoing support and maintenance to keep your website running smoothly." data-fr="Support et maintenance continus pour maintenir votre site web en bon état." data-ar="الدعم والصيانة المستمرة للحفاظ على موقعك يعمل بسلاسة.">Ongoing support and maintenance to keep your website running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <h2 data-en="Why Choose Galaxy Web Dev" data-fr="Pourquoi Choisir Galaxy Web Dev" data-ar="لماذا اختيار Galaxy Web Dev">Why Choose Galaxy Web Dev</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 data-en="Expert Team" data-fr="Équipe d'Experts" data-ar="فريق الخبراء">Expert Team</h3>
+                <p data-en="Our experienced developers stay up-to-date with the latest web technologies and best practices." data-fr="Nos développeurs expérimentés restent à jour avec les dernières technologies Web et les meilleures pratiques." data-ar="يبقى مطورونا ذوو الخبرة على اطلاع دائم بأحدث تقنيات الويب وأفضل الممارسات.">Our experienced developers stay up-to-date with the latest web technologies and best practices.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 data-en="Fast Delivery" data-fr="Livraison Rapide" data-ar="التسليم السريع">Fast Delivery</h3>
+                <p data-en="We work efficiently without compromising quality, delivering your project on time every time." data-fr="Nous travaillons efficacement sans compromettre la qualité, livrant votre projet à temps à chaque fois." data-ar="نعمل بكفاءة دون المساس بالجودة، مما يضمن تسليم مشروعك في الوقت المحدد.">We work efficiently without compromising quality, delivering your project on time every time.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 data-en="Client Focus" data-fr="Orientation Client" data-ar="تركيز العميل">Client Focus</h3>
+                <p data-en="Your success is our success. We listen to your needs and tailor solutions specifically for you." data-fr="Votre succès est notre succès. Nous écoutons vos besoins et adaptons les solutions spécifiquement pour vous." data-ar="نجاحك هو نجاحنا. نستمع إلى احتياجاتك ونخصص الحلول خصيصا لك.">Your success is our success. We listen to your needs and tailor solutions specifically for you.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 data-en="Results Driven" data-fr="Orienté Résultats" data-ar="مدفوع بالنتائج">Results Driven</h3>
+                <p data-en="We create websites that convert visitors into customers and drive measurable business growth." data-fr="Nous créons des sites web qui convertissent les visiteurs en clients et génèrent une croissance commerciale mesurable." data-ar="نحن ننشئ مواقع ويب تحول الزوار إلى عملاء وتدفع نمو الأعمال القابل للقياس.">We create websites that convert visitors into customers and drive measurable business growth.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 data-en="Scalable Solutions" data-fr="Solutions Évolutives" data-ar="حلول قابلة للتوسع">Scalable Solutions</h3>
+                <p data-en="Build your site today knowing it can grow with your business tomorrow without limitations." data-fr="Construisez votre site aujourd'hui en sachant qu'il peut croître avec votre entreprise demain sans limitations." data-ar="بناء موقعك اليوم مع معرفة أنه يمكن أن ينمو مع عملك غدا دون قيود.">Build your site today knowing it can grow with your business tomorrow without limitations.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 data-en="Quality Assured" data-fr="Qualité Garantie" data-ar="جودة مضمونة">Quality Assured</h3>
+                <p data-en="Rigorous testing and quality control ensure your website is perfect before launch and beyond." data-fr="Les tests rigoureux et le contrôle de la qualité garantissent que votre site Web est parfait avant et après le lancement." data-ar="الاختبار الدقيق ومراقبة الجودة تضمن أن موقعك مثالي قبل الإطلاق وما بعده.">Rigorous testing and quality control ensure your website is perfect before launch and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 data-en="About Galaxy Web Dev" data-fr="À Propos de Galaxy Web Dev" data-ar="عن Galaxy Web Dev">About Galaxy Web Dev</h2>
+            <p data-en="We're a passionate team of web developers dedicated to creating stunning, functional websites that help your business grow. With years of experience in modern web technologies, we deliver solutions that exceed expectations." data-fr="Nous sommes une équipe passionnée de développeurs Web dédiée à la création de sites Web époustouflants et fonctionnels qui aident votre entreprise à croître. Avec des années d'expérience en technologies Web modernes, nous offrons des solutions qui dépassent les attentes." data-ar="نحن فريق متحمس من مطوري الويب مكرسون لإنشاء مواقع ويب مذهلة وفعالة تساعد عملك على النمو. مع سنوات من الخبرة في تقنيات الويب الحديثة، نقدم حلولاً تتجاوز التوقعات.">We're a passionate team of web developers dedicated to creating stunning, functional websites that help your business grow. With years of experience in modern web technologies, we deliver solutions that exceed expectations.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h4>50+</h4>
+                    <p data-en="Projects Completed" data-fr="Projets Complétés" data-ar="المشاريع المكتملة">Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h4>40+</h4>
+                    <p data-en="Happy Clients" data-fr="Clients Satisfaits" data-ar="عملاء سعداء">Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <h4>5+</h4>
+                    <p data-en="Years Experience" data-fr="Ans d'Expérience" data-ar="سنوات من الخبرة">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h2 data-en="Connect With Us" data-fr="Connectez-vous Avec Nous" data-ar="تواصل معنا">Connect With Us</h2>
+            <div class="contact-methods">
+                <a href="https://wa.me/213673202503" class="contact-link" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+213 673 20 25 03</span>
+                </a>
+                <a href="https://www.instagram.com/galaxyweb.dev" class="contact-link" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>@galaxyweb.dev</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-en="© 2024 Galaxy Web Dev. All rights reserved." data-fr="© 2024 Galaxy Web Dev. Tous les droits sont réservés." data-ar="© 2024 Galaxy Web Dev. جميع الحقوق محفوظة.">© 2024 Galaxy Web Dev. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
