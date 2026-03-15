@@ -1118,9 +1118,9 @@ body {
 
 /* Hide extra sections on mobile phones - show only home page */
 @media (max-width: 480px) {
-    .services:not(#home),
-    .why-us,
-    .about {
-        display: none;
+    #services,
+    #why-us,
+    #about {
+        display: none !important;
     }
 }
