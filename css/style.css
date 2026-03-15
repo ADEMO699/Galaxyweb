@@ -741,6 +741,7 @@ body {
     .nav-container {
         flex-wrap: wrap;
         padding: 0 1rem;
+        max-width: 100%;
     }
 
     .nav-menu {
@@ -791,6 +792,16 @@ body {
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    /* Override max-width for responsive layout */
+    .hero-content,
+    .services-grid,
+    .reasons-grid,
+    .about-content,
+    .contact-form,
+    .contact-info {
+        max-width: 100% !important;
     }
 
     .services,
@@ -926,6 +937,16 @@ body {
         font-size: 0.8rem;
     }
 
+    /* Override max-width for responsive layout on mobile */
+    .hero-content,
+    .services-grid,
+    .reasons-grid,
+    .about-content,
+    .contact-form,
+    .contact-info {
+        max-width: 100% !important;
+    }
+
     .services,
     .why-us,
     .about,
@@ -964,7 +985,7 @@ body {
     }
 
     .contact-methods {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
 
@@ -1005,7 +1026,7 @@ body {
     .why-us-page,
     .about-page,
     .contact-page {
-        min-height: auto;
+        min-height: auto !important;
         padding: 2rem 1rem;
     }
 }
@@ -1015,7 +1036,7 @@ body {
     .why-us-page,
     .about-page,
     .contact-page {
-        min-height: auto;
+        min-height: auto !important;
         padding: 1.5rem 0.8rem;
     }
 }
