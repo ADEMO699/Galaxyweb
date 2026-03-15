@@ -955,6 +955,17 @@ body {
         padding: 0.7rem;
         font-size: 0.8rem;
     }
+
+    /* Force single column on mobile */
+    .services-grid,
+    .reasons-grid,
+    .stats {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+    }
 }
 
 /* Page Transition Animations */
@@ -986,4 +997,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Mobile responsive for pages */
+@media (max-width: 768px) {
+    .services-page,
+    .why-us-page,
+    .about-page,
+    .contact-page {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-page,
+    .why-us-page,
+    .about-page,
+    .contact-page {
+        min-height: auto;
+        padding: 1.5rem 0.8rem;
+    }
 }
