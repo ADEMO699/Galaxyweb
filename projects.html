@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Galaxy Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Animated Background Elements -->
+<div class="background-animation">
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-blur blur-3"></div>
+  <div class="floating-shape shape-1"></div>
+  <div class="floating-shape shape-2"></div>
+  <div class="floating-shape shape-3"></div>
+  <div class="floating-shape shape-4"></div>
+</div>
+
+<!-- Particle Container -->
+<div class="particles-container"></div>
+
+<!-- Grid Background -->
+<div class="animated-grid"></div>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Galaxy Web Logo" class="logo-img">
+    <span class="logo-text">GALAXY WEB</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<section class="page-content">
+  <div class="container">
+    <h1>Featured Projects</h1>
+    <div class="projects-gallery">
+      <!-- Images -->
+      <div class="project-item">
+        <div class="project-description">Screenshot 1</div>
+        <img src="my works/Screenshot 2026-03-15 211641.png" alt="Project Screenshot 1">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 2</div>
+        <img src="my works/Screenshot 2026-03-15 211719.png" alt="Project Screenshot 2">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 3</div>
+        <img src="my works/Screenshot 2026-03-15 211750.png" alt="Project Screenshot 3">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 4</div>
+        <img src="my works/Screenshot 2026-03-15 211821.png" alt="Project Screenshot 4">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 5</div>
+        <img src="my works/Screenshot 2026-03-15 211842.png" alt="Project Screenshot 5">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 6</div>
+        <img src="my works/Screenshot 2026-03-15 211908.png" alt="Project Screenshot 6">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 7</div>
+        <img src="my works/Screenshot 2026-03-15 211932.png" alt="Project Screenshot 7">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 8</div>
+        <img src="my works/Screenshot 2026-03-15 211949.png" alt="Project Screenshot 8">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 9</div>
+        <img src="my works/Screenshot 2026-03-15 212007.png" alt="Project Screenshot 9">
+      </div>
+      <div class="project-item">
+        <div class="project-description">Screenshot 10</div>
+        <img src="my works/Screenshot 2026-03-15 212039.png" alt="Project Screenshot 10">
+      </div>
+
+      <!-- Videos -->
+      <div class="project-item">
+        <div class="project-description">Festival Habit</div>
+        <video controls>
+          <source src="my works/festival habit.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">LinkedIn Project</div>
+        <video controls>
+          <source src="my works/interlinkedin .mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">My Boutique</div>
+        <video controls>
+          <source src="my works/MY-boutique.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">NAFTAL Events</div>
+        <video controls>
+          <source src="my works/NAFTAL EVENTS .mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">Recording</div>
+        <video controls>
+          <source src="my works/Recording 2026-03-26 020351.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">Smart Study DZ</div>
+        <video controls>
+          <source src="my works/smartStudydz .mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-item">
+        <div class="project-description">Templates</div>
+        <video controls>
+          <source src="my works/templates.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 GalaxyDev. All rights reserved.</p>
+</footer>
+
+<script src="page-transition.js"></script>
+<script>
+// Generate animated particles
+function createParticles() {
+  const container = document.querySelector('.particles-container');
+  const particleCount = 30;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    const randomX = Math.random() * window.innerWidth;
+    const randomDuration = 8 + Math.random() * 12;
+    const randomDelay = Math.random() * 5;
+    
+    particle.style.left = randomX + 'px';
+    particle.style.top = window.innerHeight + 'px';
+    particle.style.animationDuration = randomDuration + 's';
+    particle.style.animationDelay = randomDelay + 's';
+    
+    const colors = [
+      'rgba(168, 85, 247, 0.6)',
+      'rgba(236, 72, 153, 0.5)',
+      'rgba(59, 130, 246, 0.5)',
+      'rgba(168, 85, 247, 0.4)'
+    ];
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    container.appendChild(particle);
+  }
+}
+
+window.addEventListener('load', createParticles);
+
+setInterval(() => {
+  const container = document.querySelector('.particles-container');
+  const particleCount = container.children.length;
+  
+  if (particleCount < 50) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    const randomX = Math.random() * window.innerWidth;
+    const randomDuration = 8 + Math.random() * 12;
+    
+    particle.style.left = randomX + 'px';
+    particle.style.top = window.innerHeight + 'px';
+    particle.style.animationDuration = randomDuration + 's';
+    
+    const colors = [
+      'rgba(168, 85, 247, 0.6)',
+      'rgba(236, 72, 153, 0.5)',
+      'rgba(59, 130, 246, 0.5)',
+      'rgba(168, 85, 247, 0.4)'
+    ];
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    container.appendChild(particle);
+    
+    setTimeout(() => {
+      particle.remove();
+    }, randomDuration * 1000);
+  }
+}, 300);
+
+// Enhanced scroll animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.animation = entry.target.classList[0] + ' 0.8s ease-out forwards';
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+  observer.observe(el);
+});
+
+// Mouse tracking effect for elements
+document.addEventListener('mousemove', (e) => {
+  const cards = document.querySelectorAll('.skill-card, .project-item');
+  
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    const cardCenterX = rect.left + rect.width / 2;
+    const cardCenterY = rect.top + rect.height / 2;
+    
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    
+    const distX = mouseX - cardCenterX;
+    const distY = mouseY - cardCenterY;
+    
+    const distance = Math.sqrt(distX * distX + distY * distY);
+    
+    if (distance < 300) {
+      const strength = (300 - distance) / 300;
+      const moveX = (distX / distance) * strength * 5;
+      const moveY = (distY / distance) * strength * 5;
+      
+      card.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+    } else {
+      card.style.transform = 'translateX(0) translateY(0)';
+    }
+  });
+});
+</script>
+</body>
+</html>

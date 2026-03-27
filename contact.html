@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Galaxy Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Animated Background Elements -->
+<div class="background-animation">
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-blur blur-3"></div>
+  <div class="floating-shape shape-1"></div>
+  <div class="floating-shape shape-2"></div>
+  <div class="floating-shape shape-3"></div>
+  <div class="floating-shape shape-4"></div>
+</div>
+
+<!-- Particle Container -->
+<div class="particles-container"></div>
+
+<!-- Grid Background -->
+<div class="animated-grid"></div>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Galaxy Web Logo" class="logo-img">
+    <span class="logo-text">GALAXY WEB</span>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </nav>
+</header>
+
+<section class="page-content">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p class="contact-subtitle">Have a project in mind? Let's build something amazing together.</p>
+    
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card fade-in-up">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p><a href="mailto:hello@galaxydev.com">hello@galaxydev.com</a></p>
+        </div>
+        <div class="info-card fade-in-up" style="animation-delay: 0.1s;">
+          <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/2136732020503" target="_blank">+213 673 202 0503</a></p>
+        </div>
+        <div class="info-card fade-in-up" style="animation-delay: 0.2s;">
+          <div class="info-icon"><i class="fab fa-instagram"></i></div>
+          <h3>Instagram</h3>
+          <p><a href="https://www.instagram.com/gala.xywebdev/" target="_blank">@gala.xywebdev</a></p>
+        </div>
+        <div class="info-card fade-in-up" style="animation-delay: 0.3s;">
+          <div class="info-icon"><i class="fab fa-facebook"></i></div>
+          <h3>Facebook</h3>
+          <p><a href="https://www.facebook.com/profile.php?id=61577454148355" target="_blank">Galaxy Web Dev</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 GalaxyDev. All rights reserved.</p>
+</footer>
+
+<script src="page-transition.js"></script>
+<script>
+// Generate animated particles
+function createParticles() {
+  const container = document.querySelector('.particles-container');
+  const particleCount = 30;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    const randomX = Math.random() * window.innerWidth;
+    const randomDuration = 8 + Math.random() * 12;
+    const randomDelay = Math.random() * 5;
+    
+    particle.style.left = randomX + 'px';
+    particle.style.top = window.innerHeight + 'px';
+    particle.style.animationDuration = randomDuration + 's';
+    particle.style.animationDelay = randomDelay + 's';
+    
+    const colors = [
+      'rgba(168, 85, 247, 0.6)',
+      'rgba(236, 72, 153, 0.5)',
+      'rgba(59, 130, 246, 0.5)',
+      'rgba(168, 85, 247, 0.4)'
+    ];
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    container.appendChild(particle);
+  }
+}
+
+window.addEventListener('load', createParticles);
+
+setInterval(() => {
+  const container = document.querySelector('.particles-container');
+  const particleCount = container.children.length;
+  
+  if (particleCount < 50) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    const randomX = Math.random() * window.innerWidth;
+    const randomDuration = 8 + Math.random() * 12;
+    
+    particle.style.left = randomX + 'px';
+    particle.style.top = window.innerHeight + 'px';
+    particle.style.animationDuration = randomDuration + 's';
+    
+    const colors = [
+      'rgba(168, 85, 247, 0.6)',
+      'rgba(236, 72, 153, 0.5)',
+      'rgba(59, 130, 246, 0.5)',
+      'rgba(168, 85, 247, 0.4)'
+    ];
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+    
+    container.appendChild(particle);
+    
+    setTimeout(() => {
+      particle.remove();
+    }, randomDuration * 1000);
+  }
+}, 300);
+
+// Enhanced scroll animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.animation = entry.target.classList[0] + ' 0.8s ease-out forwards';
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+  observer.observe(el);
+});
+
+// Mouse tracking effect for elements
+document.addEventListener('mousemove', (e) => {
+  const cards = document.querySelectorAll('.info-card, .submit-btn');
+  
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    const cardCenterX = rect.left + rect.width / 2;
+    const cardCenterY = rect.top + rect.height / 2;
+    
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    
+    const distX = mouseX - cardCenterX;
+    const distY = mouseY - cardCenterY;
+    
+    const distance = Math.sqrt(distX * distX + distY * distY);
+    
+    if (distance < 300) {
+      const strength = (300 - distance) / 300;
+      const moveX = (distX / distance) * strength * 5;
+      const moveY = (distY / distance) * strength * 5;
+      
+      card.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+    } else {
+      card.style.transform = 'translateX(0) translateY(0)';
+    }
+  });
+});
+</script>
+</body>
+</html>
