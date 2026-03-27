@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Galaxy Web Dev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- Galaxy Background Canvas -->
+    <canvas id="galaxyCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Galaxy Web Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a></li>
+                <li><a href="services.html" class="nav-link" data-en="Services" data-fr="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="why-us.html" class="nav-link" data-en="Why Us" data-fr="Pourquoi Nous" data-ar="لماذا نحن">Why Us</a></li>
+                <li><a href="about.html" class="nav-link" data-en="About" data-fr="À Propos" data-ar="عننا">About</a></li>
+                <li><a href="contact.html" class="nav-link contact-btn" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services services-page">
+        <h2 data-en="Services" data-fr="Services" data-ar="الخدمات">Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 data-en="Web Development" data-fr="Développement Web" data-ar="تطوير الويب">Web Development</h3>
+                <p data-en="Custom websites built with modern technologies. Responsive, fast, and optimized for all devices." data-fr="Sites web personnalisés construits avec les technologies modernes. Réactif, rapide et optimisé pour tous les appareils." data-ar="مواقع ويب مخصصة مبنية بتقنيات حديثة. سريعة وسريعة وقابلة للتحديث لجميع الأجهزة.">Custom websites built with modern technologies. Responsive, fast, and optimized for all devices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 data-en="UI/UX Design" data-fr="Conception UI/UX" data-ar="تصميم واجهة المستخدم">UI/UX Design</h3>
+                <p data-en="Beautiful, user-friendly interfaces that engage your audience and drive conversions." data-fr="Des interfaces belles et conviviales qui engagent votre audience et stimulent les conversions." data-ar="واجهات جميلة وسهلة الاستخدام تجذب جمهورك وتحفز التحويلات.">Beautiful, user-friendly interfaces that engage your audience and drive conversions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 data-en="Mobile Solutions" data-fr="Solutions Mobiles" data-ar="حلول الهاتف المحمول">Mobile Solutions</h3>
+                <p data-en="Responsive designs that work perfectly on smartphones, tablets, and desktops." data-fr="Des conceptions réactives qui fonctionnent parfaitement sur les smartphones, les tablettes et les ordinateurs de bureau." data-ar="تصاميم سريعة الاستجابة تعمل بشكل مثالي على الهواتف الذكية والأجهزة اللوحية وأجهزة سطح المكتب.">Responsive designs that work perfectly on smartphones, tablets, and desktops.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 data-en="Performance" data-fr="Performance" data-ar="الأداء">Performance</h3>
+                <p data-en="Lightning-fast load times and optimized code for the best user experience." data-fr="Des temps de chargement ultra-rapides et un code optimisé pour la meilleure expérience utilisateur." data-ar="أوقات تحميل فائقة السرعة وكود محسّن لأفضل تجربة مستخدم.">Lightning-fast load times and optimized code for the best user experience.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 data-en="Security" data-fr="Sécurité" data-ar="الأمان">Security</h3>
+                <p data-en="Secure, reliable web solutions with modern security best practices." data-fr="Solutions web sécurisées et fiables avec les meilleures pratiques de sécurité modernes." data-ar="حلول الويب الآمنة والموثوقة مع أفضل ممارسات الأمان الحديثة.">Secure, reliable web solutions with modern security best practices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 data-en="Support" data-fr="Support" data-ar="الدعم">Support</h3>
+                <p data-en="Ongoing support and maintenance to keep your website running smoothly." data-fr="Support et maintenance continus pour maintenir votre site web en bon état." data-ar="الدعم والصيانة المستمرة للحفاظ على موقعك يعمل بسلاسة.">Ongoing support and maintenance to keep your website running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-en="© 2024 Galaxy Web Dev. All rights reserved." data-fr="© 2024 Galaxy Web Dev. Tous les droits sont réservés." data-ar="© 2024 Galaxy Web Dev. جميع الحقوق محفوظة.">© 2024 Galaxy Web Dev. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
